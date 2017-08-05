@@ -1,4 +1,5 @@
 #变量和简单数据类型
+
 #2-3
 name = "Anita Hailey,"
 print("Hello,",name,"would you like to learn some Python today?")
