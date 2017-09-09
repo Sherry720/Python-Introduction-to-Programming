@@ -1,3 +1,4 @@
+                                                 Variables and Simple Data Types
 #2-3
 name = "Anita Hailey,"
 print("Hello,",name,"would you like to learn some Python today?")
