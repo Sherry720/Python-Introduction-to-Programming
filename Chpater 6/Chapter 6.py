@@ -1,3 +1,7 @@
+                                                        Dictionaries
+           
+#在Python中，字典是一系列键—值对。每个键都与一个值相关联，你可以使用键来访问与之相关联的值。与键相关联的值可以是数字、字符串、列表乃至字典。
+#事实上，可将任何Python对象用作字典中的值。在Python中，字典用放在花括号{} 中的一系列键—值对表示。
 #6-1
 
 godness = {'name':'冬馬かずさ',
@@ -10,7 +14,6 @@ print('City is: ' + godness['city'])
 
 #6-2
 
-number_5 = range(1,6)
 leter = ['a','b','c','d','e']
 numbers = {'a':'1',
            'b':'2',
@@ -20,6 +23,8 @@ numbers = {'a':'1',
            }
 for x in leter[:]:
     print(numbers[x])
+numbers['f'] = 6      #添加键-值对
+del numbers['f']      #删除键-值对
 
 #6-3
 
@@ -37,8 +42,8 @@ for x in program[:]:
 #6-4
 
 
-for key,value in list.items():
-    print(key +"'s meaning is " + value + '.')
+for key,value in list.items():   #for循环遍历字典，for key in list.keys()：遍历所有键，for key in sorted(list.keys())：按顺序遍历所有键
+    print(key +"'s meaning is " + value + '.')         #keys换成values遍历值
 
 #6-5
 
@@ -47,7 +52,7 @@ rivers = {'amazon_river':'brazil'',peru' ',bolivia' ',colombia',
           'nile_kagera':'ethiopia' ',egyth' ',south_sudan',
           'yangtze':'china',
           }
-for key,value in set(rivers.items()):
+for key,value in set(rivers.items()):       #set是集合，每个集合里的元素都是独一无二的
     print("The " + 
           key.title() + 
           " runs through " +
@@ -59,10 +64,10 @@ for key,value in set(rivers.items()):
 #6-6
 
 
-favorite_languages = {'jen': 'python',
-                      'sarah': 'c',
-                      'edward': 'ruby',
-                      'phil': 'python',
+favorite_languages = {'jen': 'Python',
+                      'sarah': 'C',
+                      'edward': 'Ruby',
+                      'phil': 'Python',
                       } 
 for name, language in favorite_languages.items():
     print(name.title() + 
@@ -98,7 +103,8 @@ godness_2 = {'name':'長門有希',
            'age':str(17),
            'city':'fengcheng',
            }
-people = [godness_0,godness_1,godness_2]
+people = [godness_0,godness_1,godness_2]    """嵌套，有时候，需要将一系列字典存储在列表中，或将列表作为值存储在字典中，这称为嵌套 。
+                                            你可以在列表中嵌套字典、在字典中嵌套列表甚至在字典中嵌套字典。"""
 for x in people[:]:
     for key,value in x.items():
         print(key.title() + 
