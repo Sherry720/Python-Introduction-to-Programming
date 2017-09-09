@@ -1,9 +1,10 @@
+                                                 if Statements
 #5-1
 
 number = range(1,11)
 double = range(0,11,2)
 for value in number[:]:
-    if value in double:
+    if value in double: #检查特定值是否在列表中，in，not in
         print("Is value in double? \nI predict True." + str(value) )
     else:
         print("\nIs value in double? \nI predict False." + str(value))
@@ -12,7 +13,7 @@ for value in number[:]:
 
 Z = ["ONE",'TWO']
 for x in Z[:]:
-    if x == 'two':
+    if x == 'two':  # =是赋值，==是相等运算符，!=是不相等
         print( x.lower() + "==" + 'two' )
     else:
         print( x.lower() + " != " + 'two' )
@@ -28,7 +29,7 @@ print(a == b)
 list_0 = range(1,11)
 list_1 = range(1,21,3)
 list_2 = range(0,15,2)
-for x in list_0:
+for x in list_0:    #检查多个条件
     if (x in list_1) and (x in list_2):
         print("it is in the list_1")
     if(x in list_1) or (x in list_2):
@@ -51,7 +52,8 @@ for alien_color in color[:-1]:
         print('You have gained 10 points.')
 
 #5-5
-
+#Python只执行if-elif-else结构中的一个代码块，它依次检查每个条件测试，直到遇到通过了的条件测试。
+#测试通过后，Python将执行紧跟在它后面的代码，并跳过余下的测试。
 color = ['green','yellow','red']
 for alien_color in color[:]:
     if alien_color == "green":
