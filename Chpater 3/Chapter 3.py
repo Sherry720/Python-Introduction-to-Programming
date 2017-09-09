@@ -1,4 +1,7 @@
-#3-1
+                                                Introducing Lists
+# use [] as list
+
+#3-1  #访问列表元素
 
 name = ["Mikoto Misaka","Tom","Jerry"]
 print(name[0])
@@ -18,7 +21,7 @@ print("Hello,"+ name[3] + "," + "I would like to invite you to have a dinner wit
 #3-5
 
 print("I just konw that",name[-1] + " " + "can't come because she have a practice.")
-name[-1] = "和泉千晶"   #izumi chiaki
+name[-1] = "和泉千晶"   #izumi chiaki  #修改元素值
 print("Hello,"+ name[0] + "," + "I would like to invite you to have a dinner with me")
 print("Hello,"+ name[1] + "," + "I would like to invite you to have a dinner with me")
 print("Hello,"+ name[2] + "," + "I would like to invite you to have a dinner with me")
