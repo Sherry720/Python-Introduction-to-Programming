@@ -1,3 +1,4 @@
+                                                            Functions
 #8-1
 
 
@@ -7,12 +8,13 @@ display_message()
 
 #8-2
 
-def favorite_book(title):
+def favorite_book(title):   #  title是形参，'ailce in wonderland'是实参
     print("One of my favorite books is " + title.title() )
 favorite_book('ailce in wonderland')
 
 #8-3
-
+# 传递实参方法
+# 基于实参的位置传递的方法叫位置实参
 def make_shirt(size,type):
     print("This t-shirt is " + 
           size.title() +
@@ -32,7 +34,7 @@ def make_shirt(size,type = 'I love Python'):
           )
 make_shirt('big')
 make_shirt(size = 'meidum')
-make_shirt(size = 'samll', type = 'Fuck you!')
+make_shirt(size = 'samll', type = 'Fuck you!')  # 关键字实参不用考虑顺序，还指出了用途
 
 #8-5
 
@@ -47,9 +49,9 @@ describe_city('kyoto','japan')
 
 #8-6
 
-def city_country(city,country = 'china'):
+def city_country(city,country = 'china'):   #给形参一个默认值，有时让实参变得可选，指定默认值用空字符串
     x = "The city:" + city.title() + "" +  " is in " + country.title()
-    return x
+    return x    # 返回值，返回到调用函数的代码行
 while True:
     a = input("The city: ")
     b = input("The country: ")
@@ -116,7 +118,8 @@ user_profile = build_profile('anita','hailey',
 print(user_profile) 
 
 #8-14
-
+# 传递任意数量的实参用*toppings，如def make_pizza(size, *toppings):
+#任意数量的关键字实参，用两个**
 def make_car(maker,type,**information):
     a ={}
     a[maker] = "The maker of the car is:\n" + "-" + maker.title() + "."
@@ -127,6 +130,9 @@ def make_car(maker,type,**information):
 
 car = make_car('subaru', 'outback', color = 'blue', tow_package = 'what')
 print(car)
+
+#将函数导入模块，调用函数
+#使用as给函数和模块指定别名，避免名称重复
 
 
 
