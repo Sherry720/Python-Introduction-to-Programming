@@ -1,3 +1,4 @@
+                                             User Input and while Loops
 #7-1
 
 print(input("What's car you want? " ) + "\nLet me see if I can find you a Subaru")
@@ -12,9 +13,9 @@ else:
     print("We  have more tables.")
 
 #7-3
-。 
+ 
 x = input()
-if int(x) % 10 == 0:
+if int(x) % 10 == 0:    # %是计算余数
     print("\nThis number can be divid by 10.")
 else:
     print("\nThis number can't be divid by 10.")
@@ -43,7 +44,7 @@ while  int(x) > 12:
     break
 
 #7-6
-
+# continue返回上级继续循环，不再执行之后的循环指令，与break不同
 
 active =True
 while active:
